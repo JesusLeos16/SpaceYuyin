@@ -401,6 +401,7 @@ GameObject:
   - component: {fileID: 2047523545}
   - component: {fileID: 2047523549}
   - component: {fileID: 2047523550}
+  - component: {fileID: 2047523551}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -439,17 +440,18 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 70
-    width: 112.4
+    width: 81.2
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 0
-  blockName: New Block
+  blockName: Inicio
   description: 
   eventHandler: {fileID: 2047523545}
   commandList:
   - {fileID: 2047523549}
   - {fileID: 2047523550}
+  - {fileID: 2047523551}
   suppressAllAutoSelections: 0
 --- !u!114 &2047523547
 MonoBehaviour:
@@ -475,10 +477,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 2047523546}
-  selectedCommands:
-  - {fileID: 2047523550}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -536,7 +536,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2047523550
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -549,6 +549,33 @@ MonoBehaviour:
   itemId: 2
   indentLevel: 0
   storyText: tikitoko
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &2047523551
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047523544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 3
+  indentLevel: 0
+  storyText: si
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
